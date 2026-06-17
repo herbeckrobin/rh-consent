@@ -5,7 +5,7 @@
  * Plugin URI:        https://github.com/herbeckrobin/rh-consent
  * Update URI:        https://github.com/herbeckrobin/rh-consent
  * Description:       Schlanker, DSGVO-freundlicher Cookie-Consent-Banner mit Script-Gating. Teil der rh-blueprint Kollektion.
- * Version:           0.1.1
+ * Version:           0.1.2
  * Requires at least: 6.5
  * Requires PHP:      8.1
  * Author:            Robin Herbeck
@@ -21,7 +21,7 @@ if (! defined('ABSPATH')) {
     exit;
 }
 
-define('RHCONSENT_VERSION', '0.1.1');
+define('RHCONSENT_VERSION', '0.1.2');
 define('RHCONSENT_PLUGIN_FILE', __FILE__);
 define('RHCONSENT_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('RHCONSENT_PLUGIN_URL', plugin_dir_url(__FILE__));
