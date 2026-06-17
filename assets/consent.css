@@ -1,0 +1,102 @@
+.rh-consent {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 99999;
+	background: #fff;
+	color: #1c2c2c;
+	box-shadow: 0 -2px 24px rgba(0, 0, 0, 0.18);
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.rh-consent__inner {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 1.25rem 1.25rem 1.4rem;
+}
+
+.rh-consent__text {
+	margin: 0 0 1rem;
+	font-size: 0.95rem;
+	line-height: 1.5;
+}
+
+.rh-consent__link {
+	text-decoration: underline;
+}
+
+.rh-consent__options {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	margin: 0 0 1rem;
+	padding: 0.75rem 1rem;
+	background: rgba(0, 0, 0, 0.03);
+	border-radius: 8px;
+}
+
+.rh-consent__option {
+	display: flex;
+	gap: 0.6rem;
+	align-items: flex-start;
+	font-size: 0.9rem;
+	line-height: 1.4;
+}
+
+.rh-consent__option input {
+	margin-top: 0.2rem;
+}
+
+.rh-consent__actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.6rem;
+	justify-content: flex-end;
+}
+
+.rh-consent__btn {
+	font: inherit;
+	font-size: 0.92rem;
+	cursor: pointer;
+	border-radius: 8px;
+	padding: 0.6rem 1.1rem;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	background: #fff;
+	color: inherit;
+}
+
+/* Akzeptieren und Ablehnen bewusst gleichwertig (kein Dark Pattern). */
+.rh-consent__btn--primary {
+	background: #1c2c2c;
+	color: #fff;
+	border-color: #1c2c2c;
+}
+
+.rh-consent__btn--ghost {
+	margin-right: auto;
+}
+
+.rh-consent__btn:hover {
+	opacity: 0.9;
+}
+
+.rh-consent__btn:focus-visible {
+	outline: 2px solid #3858e9;
+	outline-offset: 2px;
+}
+
+@media (max-width: 600px) {
+	.rh-consent__actions {
+		justify-content: stretch;
+	}
+
+	.rh-consent__btn {
+		flex: 1 1 auto;
+	}
+
+	.rh-consent__btn--ghost {
+		margin-right: 0;
+		flex-basis: 100%;
+	}
+}
