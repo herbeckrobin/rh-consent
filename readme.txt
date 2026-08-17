@@ -4,7 +4,7 @@ Tags: consent, cookie, dsgvo, gdpr, privacy
 Requires at least: 6.5
 Tested up to: 7.0
 Requires PHP: 8.1
-Stable tag: 0.1.1
+Stable tag: 0.1.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -19,6 +19,12 @@ Gate scripts by writing them as <script type="text/plain" data-rh-consent="stati
 Part of the rh-blueprint collection. Settings live under RH Blueprint > Consent.
 
 == Changelog ==
+
+= 0.1.3 =
+* Internal: shared building blocks from core 2.6.0. The update check no longer loads on regular front-end requests.
+
+= 0.1.3 =
+* Internal: shared building blocks from core 2.6.0. The update check no longer loads on regular front-end requests.
 
 = 0.1.0 =
 * Initial release: GDPR/TDDDG-compliant banner, granular categories, script gating, PHP + JS APIs.
